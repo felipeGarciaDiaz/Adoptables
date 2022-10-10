@@ -1,0 +1,349 @@
+/*Fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300&display=swap');
+
+/*Media tag for smaller devices usually iphones and other smartphones */
+@media (max-width: 768px) {
+	#logo {
+		height: 30%;
+		width: 25%;
+	}
+	#nav {
+		margin-top: 0;
+		font-size: 10px;
+	}
+	#header {
+		height: 285%;
+	}
+    #animal-info-header {
+		height: 90%;
+
+    }
+	#contact-inquiry {
+		height: 50%;
+	}
+	footer {
+		font-size: .45em;
+	}
+	
+}
+
+/*body of all pages */
+body {
+	background-color: #ff6161;
+	margin: 0;
+	padding: 0;
+}
+
+/*This CSS styling is directed for index.html */
+header {
+	background-color: #FF6161;
+	color: #FFFFFF;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	height: 55%;
+}
+
+#header-title {
+	font-size: 65px;
+	padding-top: 7%;
+	margin-bottom: -20px;
+}
+
+#nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#what-we-do {
+	color: #1d1d1d;
+	background-color: #c2e2ff;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-family: "Open Sans", sans-serif;
+}
+
+#wwd-title {
+	font-size: 35px;
+}
+
+#wwd-desc {
+	font-size: 20px;
+}
+
+main {
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+}
+
+#basic-dog-info,
+#basic-cat-info,
+#basic-delivery-info {
+	padding: 1% 1% 1% 1%;
+	border-radius: 10px;
+}
+
+
+
+/*This CSS style is used for both dogs.html and cats.html */
+
+#list {
+	background-color:#c2e2ff;
+	padding: 1% 1% 1% 1%;
+}
+#animal-list {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding-bottom: 2%;
+
+}
+#animal-list-title {
+	text-align: center;
+	color: #252525;
+	font-family: 'Quicksand', sans-serif;
+	padding-top: 2%;
+	padding-bottom: 1%;
+
+
+}
+#animal-1, #animal-2, #animal-3, #animal-4 {
+	display: flex;
+	flex-direction: row;
+	background-color: #ececec;
+	margin: 1% 1% 1% 1%;
+	border-radius: 5px;
+	box-shadow: 5px 5px #c2c2c2;
+	transition: 0.5s ease;
+
+
+}
+#animal-1:hover, #animal-2:hover, #animal-3:hover, #animal-4:hover {
+
+	transform: scale(1.01);
+	transition: 0.5s ease;
+}
+#animal-1-img, #animal-2-img, #animal-3-img, #animal-4-img {
+	margin: 1% 1% 1% 1%;
+	border-radius: 15px;
+	box-shadow: 3px 3px #a5a5a5;
+	max-width: none;
+
+}
+
+/*This CSS style is used for the info.html section of the page */
+
+#info-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #FFFFFF;
+	padding-top: 2%;
+	margin-bottom: 2%;
+}
+
+#dog-care {
+	background-color: #89B4F5;
+	display: block;
+}
+
+#cat-care {
+	background-color: #64B88B;
+	display: none;
+
+}
+
+#dog-care, #cat-care {
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    margin: 2% 2% 2% 2%;
+    border-radius: 10px;
+
+
+}
+#animal-info {
+    padding: 1% 1% 1% 1%;
+}
+#youtube-media {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	display: none;
+}
+#youtube-media iframe {
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+#table-data {
+	overflow-x: auto;
+	display: none;
+}
+.animal-demographics {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+table.animal-demographics {
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 3pt;
+    border-color: #81C4F8;
+    border-style: solid;
+    color: #000000;
+  }
+  
+  table.animal-demographics td, table.animal-demographics th {
+    border-width: 4pt;
+    border-color: #81C4F8;
+    border-style: solid;
+    padding: 5px;
+  }
+  
+  table.animal-demographics thead {
+    background-color: #185396;
+  }
+#animal-data-citation {
+	color: #ac3636;
+	text-decoration: underline;
+	padding: 1% 1% 1% 1%;
+	display: none;
+}
+#instructions{
+	margin:auto;
+	color: #e26161;
+
+	font-family: "Open Sans", sans-serif;
+
+}
+#show-next-data {
+	color: #e26161;
+	margin: auto;
+	font-size: 75px;
+	transition: 0.5s ease;
+}
+#show-next-data:hover {
+	transform: scale(1.4);
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+/* This CSS styling is for the contact sections of the page contact.html */
+
+#contact-area {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-shrink: 2;
+	color: #1d1d1d;
+	background-color: #c2e2ff;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 20%;
+	font-family: "Open Sans", sans-serif;
+}
+
+#form {
+	margin-top: 5%;
+}
+
+input {
+	background-color: #e9f4ff;
+	width: 40%;
+	height: 20%;
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+}
+
+input:focus {
+	outline: none !important;
+}
+
+textarea {
+	background-color: #e9f4ff;
+	margin-top: 5%;
+	resize: none;
+	width: 80%;
+	height: 250%;
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+}
+
+textarea:focus {
+	outline: none !important;
+}
+
+#submit {
+	margin-top: 2%;
+	background-color: #ac3636;
+	color: #FFFFFF;
+}
+
+#submit:hover {
+	cursor: pointer;
+}
+
+/*footer is a global element which is in all pages of the site */
+footer {
+	background-color: #FF6161;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .70em;
+	padding: 0 0 0 0;
+}
+
+#address {
+	text-align: left;
+	float: left;
+	margin: 0;
+	padding: 2em;
+}
+
+#copyright {
+	text-align: right;
+	float: right;
+	margin: 0;
+	padding: 2em;
+}
+
+/* Links are a global style used in all sections of the site */
+a {
+	color: #e8f4ff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ac3636;
+}
+
+
+/* This is the credit style for credit.html, you can fijnd credit link in the footer of the page */
+#credit {
+	background-color: #c2e2ff;
+	color: #3d3d3d;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 75%;
+
+}
+#credit-design {
+
+	background-color: #FFFFFF;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+	border-radius: 15px;
+}
